@@ -165,6 +165,11 @@ img{
 .bold {
   font-weight: bold;
 }
+hr {
+  height: 3px;
+  border: 0;
+  background: var(--primary-color);
+}
 .section-description{
   padding: 0 16rem;
 }
@@ -611,7 +616,6 @@ img{
 section.gallery {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 2em;
 }
 
 .gallery {

@@ -34,7 +34,7 @@ function checkValidations() {
             document.querySelector(".name-error").innerText =
                 "Please enter only characters!";
         } else {
-
+            sendMail()
         }
     }
 }
