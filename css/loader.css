@@ -1,9 +1,6 @@
 #loader {
     background-color: #fff;
-    background-image: url(/images/loader.gif);
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 70px 70px;
     bottom: 0px;
     left: 0px;
     position: fixed;
@@ -12,13 +9,25 @@
     z-index: 9999;
 }
 
+.loadergif {
+    height: 70px;
+    width: 70px;
+    background-position: center center;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
 .center {
-    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
     text-align: center;
     margin: auto;
-    padding: 430px 0;
+    bottom: 40%;
 }
 
 .bottom {
@@ -32,3 +41,4 @@
     display: none;
     text-align: center;
 }
+
