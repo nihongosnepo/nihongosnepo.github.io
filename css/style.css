@@ -918,6 +918,17 @@ section.gallery {
   display: flex;
 }
 
+iframe {
+  width: 720px;
+  height: 720px; 
+}
+
+@media screen and ( max-width: 1200px) {
+  iframe {
+    width: 99.999%;
+  }
+}
+
 /* Footer */
 .footer{
   padding: 4rem 2rem 3rem;

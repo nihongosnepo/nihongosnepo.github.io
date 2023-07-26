@@ -30,7 +30,12 @@
 <body onload="myFunction()">
 
         <!-- Loader -->
-        <div id="loader" class="center">Chotto matte kudasai!</div>
+        <div id="loader">
+                <div class="center">Chotto matte kudasai!</div>
+                <div class="bottom">
+                        designed by <a class="decoration-none" href="https://www.instagram.com/yo.hrld/" target="_blank"><u>yo.hrld</u></a>.
+                </div>
+        </div>
 
         <!-- Header -->
         <header id="items" class="header">
@@ -50,7 +55,7 @@
                                 <div class="media-icons flex">
                                         <a href="https://www.instagram.com/nihongo.snepo/"><i
                                                         class='bx bxl-instagram-alt'></i></a>
-                                        <a href="https://t.me/+snGjzWfO7n0xZWRl"><i class='bx bxl-telegram'></i></a>
+                                        <a href="https://telegram.com"><i class='bx bxl-telegram'></i></a>
                                 </div>
 
                                 <i class='bx bx-x navClose-btn'></i>
@@ -78,8 +83,7 @@
                                                                                 Sebelum Bekerja di Jepang</h2>
                                                                 </div>
 
-                                                                <button class="button" onclick="location='https://t.me/+snGjzWfO7n0xZWRl'"
-                                                        type="button">Join Us</button>
+                                                                <button class="button">Join Us</button>
                                                         </div>
                                                 </div>
 
@@ -94,8 +98,7 @@
                                                                                 dan lebih banyak lagi!</h2>
                                                                 </div>
 
-                                                                <button class="button" onclick="location='https://t.me/+snGjzWfO7n0xZWRl'"
-                                                        type="button">Join Us</button>
+                                                                <button class="button">Join Us</button>
                                                         </div>
                                                 </div>
 
@@ -111,8 +114,7 @@
                                                                                 Tanpa Terhalang Subtitle</h2>
                                                                 </div>
 
-                                                                <button class="button" onclick="location='https://t.me/+snGjzWfO7n0xZWRl'"
-                                                        type="button">Join Us</button>
+                                                                <button class="button">Join Us</button>
                                                         </div>
                                                 </div>
                                         </div>
@@ -522,44 +524,9 @@
                                                         <h4>Ada Pertanyaan?</h4>
                                                         <h2 class="form-headline">Silahkan hubungi kami</h2>
                                                         <br>
-                                                        <form action="" onsubmit="sendMail(); reset(); return false;"
-                                                                method="post" id="submit-form">
-                                                                <p>
-                                                                        <input id="name" class="form-input" type="text"
-                                                                                placeholder="Nama*">
-                                                                        <small class="name-error"></small>
-                                                                </p>
-                                                                <p>
-                                                                        <input id="email" class="form-input"
-                                                                                type="email" placeholder="Email*">
-                                                                        <small class="name-error"></small>
-                                                                </p>
-                                                                <p class="full-width">
-                                                                        <input id="subject" class="form-input"
-                                                                                type="text" placeholder="Subjek*"
-                                                                                required>
-                                                                        <small></small>
-                                                                </p>
-                                                                <p class="full-width">
-                                                                        <textarea minlength="5" id="message" cols="30"
-                                                                                rows="7" placeholder="Pesan*"
-                                                                                required></textarea>
-                                                                        <small></small>
-                                                                </p>
-                                                                <p class="full-width">
-                                                                        <input type="checkbox" id="checkbox"
-                                                                                name="checkbox" checked> Ya, saya ingin
-                                                                        menerima komunikasi telepon/email dari
-                                                                        pengembang.
-                                                                </p>
-                                                                <p class="full-width">
-                                                                        <input type="submit" class="submit-btn"
-                                                                                value="Submit"
-                                                                                onclick="checkValidations()">
-                                                                        <button class="fbutton reset-btn"
-                                                                                onclick="reset()">Reset</button>
-                                                                </p>
-                                                        </form>
+                                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-liOsGPes58RbuwsrIIR89fl77Qi2pp67GrOLKf_JyqI5JQ/viewform?embedded=true"
+                                                                width="720p" height="720p" frameborder="0"
+                                                                marginheight="0" marginwidth="0">Memuat…</iframe>
                                                 </div>
 
                                                 <div class="contacts contact-wrapper">
@@ -590,7 +557,7 @@
                                 <div class="newsletter media-icons flex block">
                                         <a href="https://www.instagram.com/nihongo.snepo/"><i
                                                         class='bx bxl-instagram-alt'></i></a>
-                                        <a href="https://t.me/+snGjzWfO7n0xZWRl"><i class='bx bxl-telegram'></i></a>
+                                        <a href="https://telegram.com"><i class='bx bxl-telegram'></i></a>
                                 </div>
                         </div>
                         <div class="footer-copyRight">&#169; Nihongo Snepo / 日本語 Snepo | SMKN 1 Pogalan. All rigths
@@ -615,36 +582,6 @@
 
         <!-- Gallery -->
         <script src="js/gallery.js"></script>
-
-        <!-- Form -->
-        <script src="js/form.js"></script>
-        <script src=""></script>
-        <script>
-                function sendMail() {
-                        var params = {
-                                name: document.getElementById("name").value,
-                                email: document.getElementById("email").value,
-                                subject: document.getElementById("subject").value,
-                                message: document.getElementById("message").value,
-                        };
-
-                        const serviceID = "YOUR_SERVICE_ID";
-                        const templateID = "YOUR_TEMPLETE_ID";
-
-                        emailjs.send(serviceID, templateID, params)
-                                .then(res => {
-                                        document.getElementById("name").value = "";
-                                        document.getElementById("email").value = "";
-                                        document.getElementById("subject").value = "";
-                                        document.getElementById("message").value = "";
-                                        console.log(res);
-                                        alert("Your message sent successfully!!")
-
-                                })
-                                .catch(err => console.log(err));
-
-                }
-        </script>
 
         <!-- Loader -->
         <script src="js/loader.js"></script>
