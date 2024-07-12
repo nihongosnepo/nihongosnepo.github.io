@@ -30,6 +30,14 @@
     bottom: 40%;
 }
 
+.halfbottom {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    bottom: 37.5%;
+}
+
 .bottom {
     width: 100%;
     position: absolute;
